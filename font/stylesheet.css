@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-Bold.eot');
+    src: local('RM Neue Bold'), local('RMNeue-Bold'),
+        url('RMNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-Bold.woff2') format('woff2'),
+        url('RMNeue-Bold.woff') format('woff'),
+        url('RMNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-LightItalic.eot');
+    src: local('RM Neue Light Italic'), local('RMNeue-LightItalic'),
+        url('RMNeue-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-LightItalic.woff2') format('woff2'),
+        url('RMNeue-LightItalic.woff') format('woff'),
+        url('RMNeue-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-Italic.eot');
+    src: local('RM Neue Italic'), local('RMNeue-Italic'),
+        url('RMNeue-Italic.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-Italic.woff2') format('woff2'),
+        url('RMNeue-Italic.woff') format('woff'),
+        url('RMNeue-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-BoldItalic.eot');
+    src: local('RM Neue Bold Italic'), local('RMNeue-BoldItalic'),
+        url('RMNeue-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-BoldItalic.woff2') format('woff2'),
+        url('RMNeue-BoldItalic.woff') format('woff'),
+        url('RMNeue-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-Black.eot');
+    src: local('RM Neue Black'), local('RMNeue-Black'),
+        url('RMNeue-Black.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-Black.woff2') format('woff2'),
+        url('RMNeue-Black.woff') format('woff'),
+        url('RMNeue-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-Light.eot');
+    src: local('RM Neue Light'), local('RMNeue-Light'),
+        url('RMNeue-Light.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-Light.woff2') format('woff2'),
+        url('RMNeue-Light.woff') format('woff'),
+        url('RMNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-BlackItalic.eot');
+    src: local('RM Neue Black Italic'), local('RMNeue-BlackItalic'),
+        url('RMNeue-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-BlackItalic.woff2') format('woff2'),
+        url('RMNeue-BlackItalic.woff') format('woff'),
+        url('RMNeue-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-SemiBoldItalic.eot');
+    src: local('RM Neue SemiBold Italic'), local('RMNeue-SemiBoldItalic'),
+        url('RMNeue-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-SemiBoldItalic.woff2') format('woff2'),
+        url('RMNeue-SemiBoldItalic.woff') format('woff'),
+        url('RMNeue-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-SemiBold.eot');
+    src: local('RM Neue SemiBold'), local('RMNeue-SemiBold'),
+        url('RMNeue-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-SemiBold.woff2') format('woff2'),
+        url('RMNeue-SemiBold.woff') format('woff'),
+        url('RMNeue-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RM Neue';
+    src: url('RMNeue-Regular.eot');
+    src: local('RM Neue Regular'), local('RMNeue-Regular'),
+        url('RMNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RMNeue-Regular.woff2') format('woff2'),
+        url('RMNeue-Regular.woff') format('woff'),
+        url('RMNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
