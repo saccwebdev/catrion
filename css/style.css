@@ -4,12 +4,26 @@
     box-sizing: border-box;
 }
 
+
+
+
+@font-face {
+    font-family: 'RMNeue';
+    src: url('../RMNeueFont/RMNeueTRIAL-Regular.otf') format('otf'),
+        url('../RMNeueFont/RMNeueTRIAL-Light.otf') format('otf'),
+        url('../RMNeueFont/RMNeueTRIAL-Bold.otf') format('otf');
+    /* Add other font formats if needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
 .headerTop{
     padding: 46px 28px 36px 78px;
 }
 
 body{
     background-color: aliceblue;
+    font-family: 'RMNeue', sans-serif;
 }
 
 .primaryColor{
@@ -165,4 +179,11 @@ footer .footer-links p{
 
 .linkButton a{
     text-decoration: underline;
+}
+
+
+/* Testimonials Section */
+.testimonials{
+    background: #BE8617;
+    padding: 87px 78px;
 }
