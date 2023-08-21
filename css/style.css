@@ -69,6 +69,12 @@ nav a{
         font-weight: 700;
 }
 
+nav .dropdown-menu li a,nav .dropdown-menu li{
+    color: #5A92DB;
+    font-size: 16px;
+    font-weight: unset;
+}
+
 footer{
     padding: 35px 110px 42px 78px;
     /* position: absolute; */
@@ -130,8 +136,8 @@ footer .footer-links p{
 }
 
 .carousel-indicators [data-bs-target]{
-    opacity: 1;
-    background-color: rgba(255,255,255,0.4) !important;
+    /* opacity: 1; */
+    background-color: rgba(255,255,255,0.4);
 }
 
 .section.blue{
@@ -153,8 +159,8 @@ footer .footer-links p{
 }
 
 .linkButton img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .linkButton a{
