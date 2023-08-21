@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerTop{
+    padding: 46px 28px 36px 78px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.primaryColor{
+    color: #5A92DB;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.page{
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+    height: 100vh;
+}
+
+header .logo{
+    width: 297.009px;
+}
+
+.languageDropdown{
+    color: #5A92DB;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 6px;
+}
+
+header input{
+    border-radius: 48px;
+    border: 2px solid #5A92DB;
+    padding: 12px 40px 12px 25px;
+    width: 250px;
+}
+
+header .inputBox img{
+    position: absolute;
+    top: 12px;
+    right:18px;
+}
+nav *{
+    color: #fff;
+}
+nav{
+    background: #5A92DB;
+    padding: 18px 78px 15px;
+    justify-content: space-between;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    /* font-family: RM Neue; */
+        font-size: 20px;
+        font-weight: 700;
+}
+
+footer{
+    padding: 35px 110px 42px 78px;
+    /* position: absolute; */
+    /* bottom: 0%; */
+    /* left: 0; */
+    width: 100%;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+footer a{
+    color: #5A92DB;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer .logo{
+    width: 178px;
+}
+
+footer .footer-links{
+    /* gap: 78px; */
+}
+
+footer .footer-links p{
+    color: #0C2032;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 12px;
+}
+
+
+/* Hero section */
+.carousel-indicators [data-bs-target] {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: #fff !important;
+}
+
+.carousel-indicators button{
+    border: 2px solid white !important;
+}
+    
+
+.carousel-indicators {
+    position: absolute;
+    left: unset;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 4.5rem;
+    margin-bottom: 2rem;
+    margin-left: 0%;
+    list-style: none;
+}
+
+.carousel-indicators [data-bs-target]{
+    opacity: 1;
+    background-color: rgba(255,255,255,0.4) !important;
+}
+
+.section.blue{
+    background:#003F53;
+    color: #A6D178;
+    font-size: 68px;
+    font-weight: 700;
+    min-height: 110vh;
+    padding:  87px 78px ;
+    position: relative;
+}
+
+.linkButton{
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    right: 81px;
+    bottom: 66px;
+}
+
+.linkButton img{
+    width: 20px;
+    height: 20px;
+}
+
+.linkButton a{
+    text-decoration: underline;
+}
