@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/c5f6f88904a2f008e281beb54726bc96?family=RM+Neue+Regular);
+
 *{
     margin: 0;
     padding: 0;
@@ -6,16 +8,16 @@
 
 
 
-
+/* 
 @font-face {
     font-family: 'RMNeue';
     src: url('../RMNeueFont/RMNeueTRIAL-Regular.otf') format('otf'),
         url('../RMNeueFont/RMNeueTRIAL-Light.otf') format('otf'),
         url('../RMNeueFont/RMNeueTRIAL-Bold.otf') format('otf');
     /* Add other font formats if needed */
-    font-weight: normal;
-    font-style: normal;
-}
+    /* font-weight: normal;
+    font-style: normal; */
+/* }  */
 
 .headerTop{
     padding: 46px 28px 36px 78px;
@@ -23,7 +25,7 @@
 
 body{
     background-color: aliceblue;
-    font-family: 'RMNeue', sans-serif;
+    font-family: "RM Neue Regular";
 }
 
 .primaryColor{
