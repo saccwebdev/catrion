@@ -416,6 +416,16 @@ footer .footer-links p{
         padding-right: 35px;
     }
 
+    .serviceLeft{
+        padding-left: 50px;
+    }
+    .ourServices .swiper-pagination {
+        right: unset !important;
+        width: unset !important;
+        bottom: 100px !important;
+        left: 50px !important;
+    }
+
     footer {
         padding: 35px 20px 42px;
     }
@@ -563,6 +573,9 @@ footer .footer-links p{
         font-size: 20px;
         font-weight: 700;
     }
+    .serviceLeft {
+        padding-left: 50px;
+    }
         
 }
 
@@ -637,16 +650,13 @@ footer .footer-links p{
 }
 
 
-
-
-
 @media screen and (max-width:576px) {
     .headerTop {
         padding: 15px 25px;
     }
     .testimonials {
         background: #BE8617;
-        padding: 87px 25px 87px;
+        padding: 60px 25px;
     }
 
     .testimonials p {
@@ -686,7 +696,7 @@ footer .footer-links p{
 
     .sectionBlue {
         font-size: 40px;
-        padding: 87px 40px;
+        padding: 60px 40px;
     }
 
     .sectionBlue .linkButton {
@@ -702,7 +712,7 @@ footer .footer-links p{
     }
 
     .textRightSection {
-        padding: 5rem 25px 3.5rem;
+        padding: 60px 25px;
         background-color: #5A92DB;
         min-height: unset;
         font-size: 1.2rem;
@@ -741,13 +751,37 @@ footer .footer-links p{
 
     .history {
         min-height: unset;
-        padding-top: 87px;
-        padding-bottom: 87px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .history .mainImg {
         width: 240px;
         height: 240px;
-    }    
+    }  
+    
+    .heroSection .swiper-pagination {
+        
+        bottom: 20px !important;
+        right: 50% !important;
+        transform: translateX(50%);
+    }
+
+    .ourServices .swiper-pagination{
+            right: unset !important;
+            width: unset !important;
+            bottom: 20px !important;
+            left: 50% !important;
+            transform: translate(-50%);
+    }
+
+    .heroSection .swiper-slide{
+        height: 300px;
+    }
+
+    .heroSection .swiper-slide img{
+        height: 100%;
+        object-fit: cover;
+    }
 
 }
