@@ -13,6 +13,10 @@
     padding: 46px 28px 36px 78px;
 }
 
+.mobileMenuBar svg,.closeNavBar svg{
+    fill: #5A92DB;
+}
+
 body{
     background-color: aliceblue;
     font-family: "RM Neue Regular";
@@ -51,6 +55,7 @@ header input{
     border: 2px solid #5A92DB;
     padding: 12px 40px 12px 25px;
     width: 250px;
+    color: #5A92DB;
 }
 
 header .inputBox img{
@@ -61,7 +66,7 @@ header .inputBox img{
 nav *{
     color: #fff;
 }
-nav{
+header nav{
     background: #5A92DB;
     padding: 18px 78px 15px;
     justify-content: space-between;
@@ -115,7 +120,9 @@ footer .footer-links p{
         font-weight: 700;
         margin-bottom: 12px;
 }
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 /* Hero section */
 .carousel-indicators [data-bs-target] {
@@ -239,61 +246,255 @@ footer .footer-links p{
     object-fit: cover;
 }
 
+@media screen and (max-width:1300px) {
+    nav a{
+        font-size: 16px;
+    }
+
+        .textRightSection {
+            padding: 5rem 78px 3.5rem;
+            background-color: #5A92DB;
+            min-height: 100vh;
+            font-size: 27px;
+            font-weight: 700;
+            position: relative;
+        }
+    
+    
+        .textRightSection img {
+            position: absolute;
+            left: 0;
+            bottom: 0%;
+            width: 30%;
+        }
+    
+        .textRightSection .main-head {
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 120px;
+        }
+    
+        .textRightSection .second-head {
+            color: #A6D178;
+            font-size: 40px;
+            font-weight: 400;
+        }
 
 
-@media screen and (max-width:991px) {
-    footer{
+}
+
+@media screen and (max-width:1150px) {
+    header nav {
+         
+        padding: 18px 35px 15px;
+        justify-content: space-between;
+    }
+
+    .headerTop {
+        padding: 30px 35px;
+    }
+
+    footer {
         padding: 35px 20px 42px;
     }
 }
 
-@media screen and (max-width:576px) {
-    .testimonials {
-            background: #BE8617;
-            padding: 50px 20px 87px;
-        }
+@media screen and (max-width:991px) {
     
-        .testimonials h1 {
-            margin-bottom: 50px;
-        }
-    
-        .testimonials p {
-            font-size: 1rem;
-        }
-    
-        .testimonials .profile {
-            width: 150px;
-            height: 150px;
-        }
-    
-        .testimonial-item {
-            width: 100%;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-        }
-    
-        .testimonial-name,
-        .testimonial-client {
-            font-size: 2.3rem;
-            font-weight: 700;
-        }
-    
-        .testimonial-client {
-            font-weight: 400;
-        }
+    header nav {
+        background: #5A92DB;
+        padding: 18px 25px 15px;
+        justify-content: space-between;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        z-index: 12;
+        box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3);
+        padding-top: 50px;
+        transform: translateX(100%);
+        transition: all 0.5s;
+    }
 
-        .section-head {
-            font-size: 3rem;
-            font-weight: 700;
-        }
+    .showNav{
+        transform: translateX(0px);
+    }
+
+
+    .closeNavBar{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+
+    header nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header input {
+        padding: 8px 40px 8px 25px;
+        width: 100%;
+    }
+
+    header .inputBox img {
+        position: absolute;
+        top: 12px;
+        right: 18px;
+        width: 18px;
+    }
+
+    .headerTop{
+        padding: 30px 25px;
+    }
+    
+    footer{
+        padding: 35px 20px 42px;
+    }
+
+    .navbar>ul{
+        flex-direction: column;
+    }
+
+    header .logo {
+        width: 200px;
+    }
+
+    .sustainable{
+        padding: 20px 25px;
+            
+    }
+        
+}
+
+
+/* textRightSection */
+.textRightSection{
+    padding: 5rem 78px 3.5rem;
+    background-color: #5A92DB;
+    min-height: 100vh;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+.textRightSection .content{
+    margin-top: 5rem;
+}
+
+.textRightSection img{
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+}
+
+.textRightSection .main-head{
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 120px;
+}
+.textRightSection .second-head{
+    color: #A6D178;
+    font-size: 76px;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width:1300px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    .textRightSection {
+        padding: 5rem 78px 3.5rem;
+        background-color: #5A92DB;
+        min-height: 100vh;
+        font-size: 27px;
+        font-weight: 700;
+        position: relative;
+    }
+
+
+    .textRightSection img {
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        width: 30%;
+    }
+
+    .textRightSection .main-head {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 120px;
+    }
+
+    .textRightSection .second-head {
+        color: #A6D178;
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .headerTop {
+        padding: 15px 25px;
+    }
+    .testimonials {
+        background: #BE8617;
+        padding: 50px 20px 87px;
+    }
+
+    .testimonials h1 {
+        margin-bottom: 50px;
+    }
+
+    .testimonials p {
+        font-size: 1rem;
+    }
+
+    .testimonials .profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    .testimonial-item {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .testimonial-name,
+    .testimonial-client {
+        font-size: 2.3rem;
+        font-weight: 700;
+    }
+
+    .testimonial-client {
+        font-weight: 400;
+    }
+
+    .section-head {
+        font-size: 3rem;
+        font-weight: 700;
+    }
 
     .section.blue {
         font-size: 40px;
         padding: 87px 40px;
     }
 
-        .section.blue .linkButton {
+    .section.blue .linkButton {
         font-size: 30px;
         font-weight: 700;
         position: static;
@@ -301,5 +502,35 @@ footer .footer-links p{
         text-align: end;
     }
 
+    header .logo {
+        width: 150px;
+    }
+
+    .textRightSection {
+        padding: 5rem 25px 3.5rem;
+        background-color: #5A92DB;
+        min-height: 100vh;
+        font-size: 1.2rem;
+        font-weight: 700;
+        position: relative;
+    }
+
+
+
+
+    .textRightSection .main-head {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: unset;
+    }
+
+    .textRightSection .second-head {
+        color: #A6D178;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .textRightSection .content {
+        margin-top: 3rem;
+    }
 
 }
