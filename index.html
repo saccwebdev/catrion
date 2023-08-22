@@ -5,12 +5,52 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>Homepage</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -78,11 +118,11 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">In Flight</a></li>
                             <li><a class="dropdown-item" href="#">Retail</a></li>
-                            <li class="dropdown">
+                            <li class="dropdown ">
                                 <a class="dropdown-item" href="#">
                                     Integrated Facilities Management &raquo;
                                 </a>
-                                <ul class="dropdown-menu ">
+                                <ul class="dropdown-menu dropdown-submenu ">
                                     <li>
                                         <a class="dropdown-item" href="#">Operation Sectors</a>
                                     </li>
@@ -130,7 +170,16 @@
 
         </header>
 
-        <div class="Hero-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- <div class="Hero-section">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -154,7 +203,7 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <div class="textRightSection text-white">
             <div class="main-head">Committed to Care</div>
@@ -168,7 +217,16 @@
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                 </div>
             </div>
+        </div>
 
+        <div class="section-padding-x history text-white">
+            <div class="historyHead">Our History</div>
+            <h1 class="section-head">40 Years</h1>
+            <img src="./images/history.png" alt="" class="mainImg img-fluid">
+            <div class="linkButton">
+                <a href="">Discover More</a>
+                <img src="./images/linkArrow.svg" alt="">
+            </div>
         </div>
 
         <div class="section sustainable d-flex justify-content-between align-items-center">
@@ -311,6 +369,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
     <script src="script.js"></script>
 
 </body>

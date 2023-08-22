@@ -100,6 +100,11 @@ nav .dropdown-menu li a,nav .dropdown-menu li{
     font-weight: unset;
 }
 
+.dropdown-menu .dropdown-submenu {
+    left: 98%;
+    top: -10px;
+}
+
 footer{
     padding: 35px 110px 42px 78px;
     width: 100%;
@@ -272,6 +277,38 @@ footer .footer-links p{
     max-width: 100%;
 }
 
+
+/* History section */
+.history{
+    background: #BE8617;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 97px;
+    padding-bottom: 97px;
+}
+
+.history .mainImg{
+    width: calc(100vh - 200px);
+    height: calc(100vh - 200px);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.history .historyHead{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.history .linkButton {
+    position: absolute;
+    right: 81px;
+    bottom: 66px;
+}
+
 @media screen and (max-width:1300px) {
     nav a{
         font-size: 16px;
@@ -350,6 +387,11 @@ footer .footer-links p{
         padding-top: 50px;
         transform: translateX(100%);
         transition: all 0.5s;
+    }
+
+    .dropdown-menu .dropdown-submenu {
+        left: 0%;
+        top: -10px;
     }
 
     .showNav{
