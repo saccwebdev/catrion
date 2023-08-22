@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+:root{
+    --greenColor:#A6D178
+}
+
+.primaryGreenText{
+    color: var(--greenColor);
+}
 
 .section-padding-x{
     padding-left: 78px;
@@ -143,39 +150,29 @@ footer .footer-links p{
     display: block;
 }
 
-/* Hero section */
-.carousel-indicators [data-bs-target] {
-    height: 17px;
-    width: 17px;
-    border-radius: 50%;
+
+/* Hero Section */
+
+.heroSection .swiper-pagination{
+    left: unset !important;
+    width: unset !important;
+    bottom: 30px !important;
+    right: 80px !important;
+}
+
+.swiper-pagination-bullet{
+    border: 3px solid white;
+    width: 18px;
+    height: 18px;
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+}
+
+ .swiper-pagination-bullet-active{
     background-color: #fff !important;
 }
 
-.carousel-indicators button{
-    border: 2px solid white !important;
-}
-    
-
-.carousel-indicators {
-    position: absolute;
-    left: unset;
-    z-index: 2;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    padding: 0;
-    margin-right: 4.5rem;
-    margin-bottom: 2rem;
-    margin-left: 0%;
-    list-style: none;
-}
-
-.carousel-indicators [data-bs-target]{
-    /* opacity: 1; */
-    background-color: rgba(255,255,255,0.4);
-}
-
-.section.blue{
+.sectionBlue{
     background:#003F53;
     color: #A6D178;
     font-size: 68px;
@@ -185,7 +182,7 @@ footer .footer-links p{
     position: relative;
 }
 
-.section.blue .linkButton{
+.sectionBlue .linkButton{
     position: absolute;
     right: 81px;
     bottom: 66px;
@@ -209,7 +206,7 @@ footer .footer-links p{
 /* Testimonials Section */
 .testimonials{
     background: #BE8617;
-    padding: 50px 78px 87px;
+    padding: 65px 78px 113px;
 }
 
 .testimonials h1{
@@ -226,17 +223,24 @@ footer .footer-links p{
     border-radius: 50%;
     background-color: white;
     flex-shrink: 0;
+    overflow: hidden;
+}
+
+.testimonials .profile img {
+    width: 230px;
+    height: 230px;
 }
 
 .testimonial-item{
     width: 48%;
+    padding: 0%;
 }
 
-.testimonial-name,.testimonial-client{
+.testimonials .testimonial-name,.testimonials .testimonial-client{
     font-size: 2.3rem;
     font-weight: 700;
 }
-.testimonial-client{
+.testimonials .testimonial-client{
     font-weight: 400;
 }
 
@@ -298,16 +302,68 @@ footer .footer-links p{
     transform: translate(-50%,-50%);
 }
 
-.history .historyHead{
-    font-size: 30px;
-    font-weight: 700;
-}
+
 
 .history .linkButton {
     position: absolute;
     right: 81px;
     bottom: 66px;
 }
+
+.sectionHeadSmall {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Our Services */
+
+.ourServices img{
+    width: 100%;
+    height: 100%;
+}
+
+.serviceLeft{
+    background: #003F53;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.ourServices .swiper-pagination {
+    right: unset !important;
+    width: unset !important;
+    bottom: 100px !important;
+    left: 78px !important;
+}
+
+/* News section */
+.NewsRight{
+    background: var(--greenColor);
+    padding-top: 86px;
+    padding-bottom: 86px;
+    font-size: 20px;
+}
+
+.NewsRight .titleText{
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.newLeft img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsSection .swiper-pagination {
+    left: unset !important;
+    top: unset;
+    width: unset !important;
+    bottom: 100px !important;
+    right: 80px !important;
+}
+
+
 
 @media screen and (max-width:1300px) {
     nav a{
@@ -348,7 +404,6 @@ footer .footer-links p{
 
 @media screen and (max-width:1150px) {
     header nav {
-         
         padding: 18px 35px 15px;
         justify-content: space-between;
     }
@@ -398,7 +453,6 @@ footer .footer-links p{
         transform: translateX(0px);
     }
 
-
     .closeNavBar{
         position: absolute;
         right: 20px;
@@ -444,6 +498,70 @@ footer .footer-links p{
     .sustainable{
         padding: 20px 25px;
             
+    }
+
+    .testimonial-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .testimonials .profile {
+        width: 180px;
+        height: 180px;
+    }
+
+    .testimonials .profile img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .testimonials h1 {
+        margin-bottom: 50px;
+    }
+
+    .section-head {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+        .sectionBlue{
+            min-height: unset;
+            font-size: 45px;
+        }
+
+    .sectionBlue .linkButton {
+        font-size: 24px;
+        font-weight: 700;
+        position: static;
+        margin-top: 50px;
+        text-align: end;
+    }
+
+    .history .mainImg {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        position: static;
+        top: 50%;
+        left: 50%;
+        transform: translate(0,0);
+    }
+
+    .history .linkButton{
+        font-size: 24px;
+        font-weight: 700;
+        position: static;
+        margin-top: 50px;
+        text-align: end;
+    }
+
+    .history .section-head{
+        margin-bottom: 50px;
+    }
+
+    .sectionHeadSmall {
+        font-size: 20px;
+        font-weight: 700;
     }
         
 }
@@ -528,11 +646,7 @@ footer .footer-links p{
     }
     .testimonials {
         background: #BE8617;
-        padding: 50px 25px 87px;
-    }
-
-    .testimonials h1 {
-        margin-bottom: 50px;
+        padding: 87px 25px 87px;
     }
 
     .testimonials p {
@@ -540,6 +654,10 @@ footer .footer-links p{
     }
 
     .testimonials .profile {
+        width: 150px;
+        height: 150px;
+    }
+    .testimonials .profile img {
         width: 150px;
         height: 150px;
     }
@@ -551,27 +669,27 @@ footer .footer-links p{
         text-align: center;
     }
 
-    .testimonial-name,
-    .testimonial-client {
-        font-size: 2.3rem;
+    .testimonials .testimonial-name,
+    .testimonials .testimonial-client {
+        font-size: 1.8rem;
         font-weight: 700;
     }
 
-    .testimonial-client {
+    .testimonials .testimonial-client {
         font-weight: 400;
     }
 
     .section-head {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
     }
 
-    .section.blue {
+    .sectionBlue {
         font-size: 40px;
         padding: 87px 40px;
     }
 
-    .section.blue .linkButton {
+    .sectionBlue .linkButton {
         font-size: 30px;
         font-weight: 700;
         position: static;
@@ -615,5 +733,21 @@ footer .footer-links p{
         padding-top: 70px;
         padding-bottom: 90px;
     }
+
+    .awardPartners .awards img{
+        width: 80px;
+        height:80px;
+    }
+
+    .history {
+        min-height: unset;
+        padding-top: 87px;
+        padding-bottom: 87px;
+    }
+
+    .history .mainImg {
+        width: 240px;
+        height: 240px;
+    }    
 
 }

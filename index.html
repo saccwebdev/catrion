@@ -9,8 +9,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- Demo styles -->
     <style>
@@ -32,22 +33,6 @@
         .swiper {
             width: 100%;
             height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     </style>
 
@@ -170,40 +155,16 @@
 
         </header>
 
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper heroSection" style="height: fit-content;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
+                <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
 
-        <!-- <div class="Hero-section">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./images/hero1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./images/hero1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/hero1.png" class="d-block w-100" alt="...">
 
-                    </div>
-                </div>
-
-            </div>
-        </div> -->
 
         <div class="textRightSection text-white">
             <div class="main-head">Committed to Care</div>
@@ -219,13 +180,84 @@
             </div>
         </div>
 
+
+        <!-- <div class=" ourServices text-white row mx-0">
+            <div class="col-6 serviceLeft section-padding-x">
+                <div class="sectionHeadSmall">Our Services</div>
+                <h1 class="section-head d-flex flex-column mt-2"><span
+                        class="primaryGreenText text-decoration-underline">In-Flight</span>
+                    <span>Retail</span>
+                    <span>Catering & Facilities</span>
+                </h1>
+            </div>
+            <div class="col-6 px-0">
+                <img src="./images/CateringService.png" alt="" class="mainImg img-fluid">
+            </div>
+        </div> -->
+
+        <div class="ourServices swiper mySwiper heroSection">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="h-100 text-white row mx-0">
+                        <div class="col-6 serviceLeft section-padding-x">
+                            <div class="sectionHeadSmall">Our Services</div>
+                            <h1 class="section-head d-flex flex-column mt-2"><span
+                                    class="primaryGreenText text-decoration-underline">In-Flight</span>
+                                <span>Retail</span>
+                                <span>Catering & Facilities</span>
+                            </h1>
+                        </div>
+                        <div class="col-6 px-0">
+                            <img src="./images/CateringService.png" alt="" class="mainImg img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-100 text-white row mx-0">
+                        <div class="col-6 serviceLeft section-padding-x">
+                            <div class="sectionHeadSmall">Our Services</div>
+                            <h1 class="section-head d-flex flex-column mt-2"><span
+                                    class="primaryGreenText text-decoration-underline">In-Flight</span>
+                                <span>Retail</span>
+                                <span>Catering & Facilities</span>
+                            </h1>
+                        </div>
+                        <div class="col-6 px-0">
+                            <img src="./images/CateringService.png" alt="" class="mainImg img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="h-100 text-white row mx-0">
+                        <div class="col-6 serviceLeft section-padding-x">
+                            <div class="sectionHeadSmall">Our Services</div>
+                            <h1 class="section-head d-flex flex-column mt-2"><span
+                                    class="primaryGreenText text-decoration-underline">In-Flight</span>
+                                <span>Retail</span>
+                                <span>Catering & Facilities</span>
+                            </h1>
+                        </div>
+                        <div class="col-6 px-0">
+                            <img src="./images/CateringService.png" alt="" class="mainImg img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
         <div class="section-padding-x history text-white">
-            <div class="historyHead">Our History</div>
+            <div class="sectionHeadSmall">Our History</div>
             <h1 class="section-head">40 Years</h1>
-            <img src="./images/history.png" alt="" class="mainImg img-fluid">
+            <div class="text-center">
+                <img src="./images/history.png" alt="" class="mainImg img-fluid">
+            </div>
+
             <div class="linkButton">
                 <a href="">Discover More</a>
-                <img src="./images/linkArrow.svg" alt="">
+                <img src="./images/linkArrowWhite.svg" alt="">
             </div>
         </div>
 
@@ -248,27 +280,27 @@
 
         <div class="section awardPartners section-padding-x text-white">
             <div>
-                <div class="row justify-content-between">
+                <div class="row mx-0 justify-content-between">
                     <h1 class=" col-lg-5 section-head">Our Awards</h1>
-                    <div class="col-lg-7 row d-flex text-center pt-3 pt-lg-5">
-                        <div class="col-sm-6 col-lg-4">
+                    <div class="col-lg-7 awards row mx-0 d-flex gap-3 gap-sm-0 text-center pt-3 pt-lg-5">
+                        <div class="col-sm-6 col-lg-4 ">
                             <img src="./images/award2023.png" alt="">
-                            <p class="mt-4 pt-2">Award of Excellence in Catering Quality (QSAI)</p>
+                            <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
                         </div>
-                        <div class="col-sm-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-4 ">
                             <img src="./images/award2014.png" alt="">
-                            <p class="mt-4 pt-2">Award of Excellence in Catering Quality (QSAI)</p>
+                            <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
                         </div>
-                        <div class="col-sm-6 col-lg-4">
+                        <div class="col-sm-6 col-lg-4 ">
                             <img src="./images/award2013.png" alt="">
-                            <p class="mt-4 pt-2">Award of Excellence in Catering Quality (QSAI)</p>
+                            <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="row justify-content-between mt-5 pt-lg-5">
+                <div class="row mx-0 justify-content-between mt-5 pt-lg-5">
                     <h1 class="col-lg-5 section-head">Our Partners</h1>
-                    <div class="col-lg-7 d-flex row pt-3 pt-lg-5 text-center">
+                    <div class="col-lg-7 d-flex row mx-0 pt-3 pt-lg-5 text-center">
                         <div class="col-sm-6 col-lg-4">
                             <img src="./images/partner1.png" alt="">
                         </div>
@@ -283,7 +315,117 @@
             </div>
         </div>
 
-        <div class="section blue">
+        <div class="swiper mySwiperVertical newsSection">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="  text-white row mx-0">
+                        <div class="col-6 px-0 newsLeft ">
+                            <img src="./images/latestNews.png" alt="" class="mainImg">
+                        </div>
+                        <div class="col-6 NewsRight section-padding-x">
+                            <h1 class="section-head ">Latest News</h1>
+                            <div>
+                                <div class="titleText">Place Title Here</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
+                                    reprehenderit in
+                                    voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur.</p>
+                                <div class="linkButton mt-5">
+                                    <a href="">Read more</a>
+                                    <img src="./images/linkArrowWhite.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="  text-white row mx-0 newsLeft ">
+                        <div class="col-6 px-0">
+                            <img src="./images/latestNews.png" alt="" class="mainImg ">
+                        </div>
+                        <div class="col-6 NewsRight section-padding-x">
+                            <h1 class="section-head ">Latest News</h1>
+                            <div>
+                                <div class="titleText">Place Title Here</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
+                                    reprehenderit in
+                                    voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur.</p>
+                                <div class="linkButton mt-5">
+                                    <a href="">Read more</a>
+                                    <img src="./images/linkArrowWhite.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="  text-white row mx-0 newsLeft ">
+                        <div class="col-6 px-0">
+                            <img src="./images/latestNews.png" alt="" class="mainImg">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between NewsRight section-padding-x">
+                            <h1 class="section-head ">Latest News</h1>
+                            <div class="col-lg-8">
+                                <div class="titleText">Place Title Here</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
+                                    reprehenderit in
+                                    voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur.</p>
+                                <div class="linkButton mt-5">
+                                    <a href="">Read more</a>
+                                    <img src="./images/linkArrowWhite.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- <div class=" newsSection text-white row mx-0">
+            <div class="col-6 px-0">
+                <img src="./images/latestNews.png" alt="" class="mainImg img-fluid">
+            </div>
+            <div class="col-6 NewsRight section-padding-x">
+                <h1 class="section-head ">Latest News</h1>
+                <div>
+                    <div class="titleText">Place Title Here</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur.</p>
+                    <div class="linkButton mt-5">
+                        <a href="">Read more</a>
+                        <img src="./images/linkArrowWhite.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div> -->
+
+
+
+        <div class="section sectionBlue section-padding-x">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna
             aliqua.
@@ -294,12 +436,12 @@
 
         </div>
 
-        <div class="section testimonials text-white">
+        <div class="section section-padding-x testimonials text-white">
             <h1 class="section-head">Testimonials</h1>
 
-            <div class="row gap-3 gap-md-0 justify-content-between">
+            <div class="row mx-0 gap-3 gap-md-5 gap-lg-0 justify-content-between">
                 <div class="testimonial-item d-flex gap-4 align-items-center">
-                    <div class="profile"></div>
+                    <div class="profile"><img src="./images/testimonial1.png" alt=""></div>
                     <div>
                         <h2 class="testimonial-name mb-0">Name Surname </h2>
 
@@ -311,12 +453,12 @@
 
                 </div>
                 <div class="testimonial-item d-flex gap-4 align-items-center">
-                    <div class="profile"></div>
+                    <div class="profile"><img src="./images/testimonial2.png" alt=""></div>
                     <div>
                         <h2 class="testimonial-name mb-0">Name Surname </h2>
 
                         <p class="testimonial-client">Client</p>
-                        <p>Lorem ipsum dolor sit amet, consecte tur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna
                             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                     </div>
@@ -377,8 +519,18 @@
         var swiper = new Swiper(".mySwiper", {
             pagination: {
                 el: ".swiper-pagination",
+                clickable: true,
             },
         });
+
+        var swiperVertical = new Swiper(".mySwiperVertical", {
+            direction: "vertical",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
     </script>
     <script src="script.js"></script>
 
