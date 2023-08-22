@@ -7,7 +7,10 @@
 }
 
 
-
+.section-padding-x{
+    padding-left: 78px;
+    padding-right: 78px;
+}
 
 .headerTop{
     padding: 46px 28px 36px 78px;
@@ -17,6 +20,7 @@
     fill: #5A92DB;
     cursor: pointer;
 }
+
 
 body{
     background-color: aliceblue;
@@ -82,8 +86,8 @@ header nav{
 nav a{
     color: #fff;
     text-decoration: none;
-        font-size: 20px;
-        font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 a:hover{
@@ -130,7 +134,7 @@ footer .footer-links p{
         font-weight: 700;
         margin-bottom: 12px;
 }
-.dropdown:hover .dropdown-menu {
+.dropdown:hover > .dropdown-menu {
     display: block;
 }
 
@@ -257,6 +261,17 @@ footer .footer-links p{
     object-fit: cover;
 }
 
+/* Award and Partners section */
+.awardPartners{
+    padding-top: 120px;
+    padding-bottom: 160px;
+    background: #5A92DB;
+}
+
+.awardPartners img{
+    max-width: 100%;
+}
+
 @media screen and (max-width:1300px) {
     nav a{
         font-size: 16px;
@@ -304,6 +319,10 @@ footer .footer-links p{
     .headerTop {
         padding: 30px 35px;
     }
+    .section-padding-x{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 
     footer {
         padding: 35px 20px 42px;
@@ -312,6 +331,11 @@ footer .footer-links p{
 
 @media screen and (max-width:991px) {
     
+    .section-padding-x {
+            padding-left: 25px;
+            padding-right: 25px;
+    }
+
     header nav {
         background: #5A92DB;
         padding: 18px 25px 15px;
@@ -462,7 +486,7 @@ footer .footer-links p{
     }
     .testimonials {
         background: #BE8617;
-        padding: 50px 20px 87px;
+        padding: 50px 25px 87px;
     }
 
     .testimonials h1 {
@@ -520,7 +544,7 @@ footer .footer-links p{
     .textRightSection {
         padding: 5rem 25px 3.5rem;
         background-color: #5A92DB;
-        min-height: 100vh;
+        min-height: unset;
         font-size: 1.2rem;
         font-weight: 700;
         position: relative;
@@ -537,11 +561,17 @@ footer .footer-links p{
 
     .textRightSection .second-head {
         color: #A6D178;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 400;
     }
     .textRightSection .content {
-        margin-top: 3rem;
+        margin-top: 2.5rem;
+    }
+
+
+    .awardPartners {
+        padding-top: 70px;
+        padding-bottom: 90px;
     }
 
 }
