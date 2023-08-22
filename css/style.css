@@ -56,9 +56,13 @@ header .logo{
 header input{
     border-radius: 48px;
     border: 2px solid #5A92DB;
-    padding: 12px 40px 12px 25px;
+    padding: 12px 40px 10px 25px;
     width: 250px;
     color: #5A92DB;
+}
+
+header input::placeholder{
+    color:#E0E0E0;
 }
 
 header .inputBox img{
@@ -344,7 +348,7 @@ footer .footer-links p{
     }
 
     header input {
-        padding: 8px 40px 8px 25px;
+        padding: 8px 40px 6px 25px;
         width: 100%;
     }
 
