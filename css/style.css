@@ -7,11 +7,19 @@
 }
 
 :root{
-    --greenColor:#A6D178
+    --greenColor:#A6D178;
+    --blueColor:#5A92DB;
 }
 
 .primaryGreenText{
     color: var(--greenColor);
+}
+.primaryGreenBg{
+    background: var(--greenColor) !important;
+}
+
+.primaryBlueBg{
+    background: var(--blueColor) ;
 }
 
 .section-padding-x{
@@ -32,6 +40,7 @@
 body{
     background-color: aliceblue;
     font-family: "RM Neue Regular";
+    font-size: 20px;
 }
 
 .primaryColor{
@@ -41,13 +50,6 @@ body{
 a{
     text-decoration: none;
     color: inherit;
-}
-
-.page{
-    max-width: 1440px;
-    margin: auto;
-    position: relative;
-    height: 100vh;
 }
 
 header .logo{
@@ -213,10 +215,6 @@ footer .footer-links p{
     margin-bottom: 100px;
 }
 
-.testimonials p{
-    font-size: 1.25rem;
-}
-
 .testimonials .profile{
     width: 230px;
     height: 230px;
@@ -364,43 +362,90 @@ footer .footer-links p{
 }
 
 
+/* textRightSection */
+.textRightSection {
+    padding: 6.4rem 78px;
+    background-color: #5A92DB;
+    min-height: 100vh;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+}
+
+.textRightSection .content {
+    margin-top: 3.8rem;
+    line-height: normal;
+}
+
+.textRightSection img {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+}
+
+.textRightSection .insideImage {
+    left: 1.4rem;
+}
+
+.textRightSection .main-head {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 120px;
+}
+
+.textRightSection .second-head {
+    color: #A6D178;
+    font-size: 76px;
+    font-weight: 400;
+}
 
 @media screen and (max-width:1300px) {
-    nav a{
+    nav a {
         font-size: 16px;
     }
 
-        .textRightSection {
-            padding: 5rem 78px 3.5rem;
-            background-color: #5A92DB;
-            min-height: 100vh;
-            font-size: 27px;
-            font-weight: 700;
-            position: relative;
-        }
-    
-    
-        .textRightSection img {
-            position: absolute;
-            left: 0;
-            bottom: 0%;
-            width: 30%;
-        }
-    
-        .textRightSection .main-head {
-            font-size: 90px;
-            font-weight: 700;
-            line-height: 120px;
-        }
-    
-        .textRightSection .second-head {
-            color: #A6D178;
-            font-size: 40px;
-            font-weight: 400;
-        }
+    .textRightSection {
+        padding: 5rem 78px 3.5rem;
+        background-color: #5A92DB;
+        min-height: 100vh;
+        font-size: 27px;
+        font-weight: 700;
+        position: relative;
+    }
+
+
+    .textRightSection img {
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        width: 30%;
+    }
+
+    .textRightSection .main-head {
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 120px;
+    }
+
+    .textRightSection .second-head {
+        color: #A6D178;
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .testimonials .profile {
+        width: 160px;
+        height: 160px;
+    }
+
+    .testimonials .profile img {
+        width: 160px;
+        height: 160px;
+    }
 
 
 }
+
 
 @media screen and (max-width:1150px) {
     header nav {
@@ -456,7 +501,7 @@ footer .footer-links p{
 
     .dropdown-menu .dropdown-submenu {
         left: 0%;
-        top: -10px;
+        top: 32px;
     }
 
     .showNav{
@@ -575,81 +620,24 @@ footer .footer-links p{
     .serviceLeft {
         padding-left: 50px;
     }
+
+    
+        .textRightSection .main-head {
+            font-size: 70px;
+            font-weight: 700;
+            line-height: normal;
+        }
+    
         
 }
 
 
-/* textRightSection */
-.textRightSection{
-    padding: 5rem 78px 3.5rem;
-    background-color: #5A92DB;
-    min-height: 100vh;
-    font-size: 40px;
-    font-weight: 700;
-    position: relative;
-}
-
-.textRightSection .content{
-    margin-top: 5rem;
-}
-
-.textRightSection img{
-    position: absolute;
-    left: 0;
-    bottom: 0%;
-}
-
-.textRightSection .main-head{
-    font-size: 120px;
-    font-weight: 700;
-    line-height: 120px;
-}
-.textRightSection .second-head{
-    color: #A6D178;
-    font-size: 76px;
-    font-weight: 400;
-}
-
-
-@media screen and (max-width:1300px) {
-    nav a {
-        font-size: 16px;
-    }
-
-    .textRightSection {
-        padding: 5rem 78px 3.5rem;
-        background-color: #5A92DB;
-        min-height: 100vh;
-        font-size: 27px;
-        font-weight: 700;
-        position: relative;
-    }
-
-
-    .textRightSection img {
-        position: absolute;
-        left: 0;
-        bottom: 0%;
-        width: 30%;
-    }
-
-    .textRightSection .main-head {
-        font-size: 90px;
-        font-weight: 700;
-        line-height: 120px;
-    }
-
-    .textRightSection .second-head {
-        color: #A6D178;
-        font-size: 40px;
-        font-weight: 400;
-    }
-
-
-}
 
 
 @media screen and (max-width:576px) {
+    body{
+        font-size: 1rem;
+    }
     .headerTop {
         padding: 16px 25px;
     }
@@ -658,9 +646,9 @@ footer .footer-links p{
         padding: 60px 25px;
     }
 
-    .testimonials p {
+    /* .testimonials p {
         font-size: 1rem;
-    }
+    } */
 
     .testimonials .profile {
         width: 150px;

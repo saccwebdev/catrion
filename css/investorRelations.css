@@ -1,0 +1,132 @@
+.inventorsCenterSection .column-item {
+    position: relative;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+body{
+    color: #0C2032;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.inventorsCenterSection .column-item img {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.darkOverlay::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.inventorsCenterSection .column-item p {
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    left: 2rem;
+    bottom: 40px;
+    margin-bottom: 0%;
+    z-index: 1;
+}
+
+.inventorsCenterSection .primaryBgBlue {
+    background: #5A92DB;
+}
+
+.inventorsCenterSection h1 {
+    color: #0C2032;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/* columnText Section */
+.columnTextSection{
+    padding-top: 200px ;
+    padding-bottom: 75px;
+}
+.columnsText{
+    margin-top: 60px;
+}
+.columnsText p{
+    width: 28%;
+}
+
+
+@media screen and (max-width:1200px) {
+    .inventorsCenterSection .column-item p {
+        font-size: 40px;
+        font-weight: 700;
+        bottom: 20px;
+        margin-bottom: 0%;
+    }
+
+        .columnsText p {
+            width: 32%;
+        }
+}
+
+@media screen and (max-width:991px) {
+    body {
+        font-size: 1.15rem;
+    }
+    .inventorsCenterSection .column-item p {
+        font-size: 30px;
+    }
+    
+
+    .columnTextSection {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .columnsText p {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    body{
+        font-size: 1rem;
+    }
+    .inventorsCenterSection .column-item p {
+        color: #FFF;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        margin-bottom: 0%;
+    }
+
+    .inventorsCenterSection .column-item {
+        height: 350px;
+    }
+
+    .inventorsCenterSection h1 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .columnTextSection {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .columnsText {
+        margin-top: 30px;
+    }
+    .columnsText p {
+        width: 100%;
+    }
+}    

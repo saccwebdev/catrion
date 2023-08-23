@@ -1,0 +1,91 @@
+/* contact-section */
+.contact-section{
+    min-height: 100vh;
+    font-size: 1.3rem;
+    padding-top: 100px ;
+    padding-bottom: 100px;
+}
+
+.contactHead{
+    font-size: 120px;
+}
+
+.contact-section .contactBtn{
+    width: 250px;
+    border-radius: 50%;
+    height: 250px;
+    border: none;
+    color: #5A92DB;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 85px;
+}
+
+.contact-section .contactBtn:hover{
+    background: #A6D178;
+    color: #fff;
+}
+
+.sectionBlue{
+    padding-bottom: 50px;
+}
+
+
+/* expertiseSection */
+.expertiseSection img{
+    width: 100%;
+    height: 100%;
+}
+
+.expertiseSection .expertiseTitle{
+    position: absolute;
+    left: 12%;
+    top: 65%;
+}
+
+.expertiseSection .showOnHover{
+    top: 0%;
+    opacity: 0;
+}
+
+.showOnHover button{
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    border: none;
+    color: #5A92DB;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 85px;
+}
+
+.showOnHover button:active{
+    background: #A6D178;
+    color: #fff;
+}
+
+.expertiseOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    z-index: 2;
+}
+
+.overlayGrey{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.expertiseOverlayBox:hover .showOnHover{
+    opacity: 1;
+}
+
+.expertiseOverlayBox:hover .overlayGrey {
+    background: #A898AF;
+}
