@@ -103,9 +103,19 @@ a:hover{
     color: unset;
 }
 
+
+nav .dropdown-menu{
+    background-color: var(--blueColor);
+    padding: 0.6rem 0;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 0.35rem 1.5rem;
+}    
+
 nav .dropdown-menu li a,nav .dropdown-menu li{
-    color: #5A92DB;
-    font-size: 16px;
+    color: #fff;
+    font-size: 18px;
     font-weight: unset;
 }
 
@@ -326,11 +336,41 @@ footer .footer-links p{
     padding-bottom: 140px;
 }
 
-.ourServices .swiper-pagination {
-    right: unset !important;
-    width: unset !important;
-    bottom: 100px !important;
-    left: 78px !important;
+.ourServices .customSlideDots{
+    margin-top: 60px;
+    display: flex;
+    gap: 25px;
+}
+
+.ourServices .activeServiceTab{
+    color: var(--greenColor);
+    text-decoration: underline;
+}
+
+.ourServices .serviceTabs span {
+    cursor: pointer;
+}
+
+.ourServices .customSlideDots div{
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    cursor: pointer;
+}
+
+
+.ourServices .customSlideDots .activeDot{
+    background: #fff;
+}
+
+.ourServices .serviceImages img{
+    display: none;
+    object-fit: cover;
+}
+
+.ourServices .serviceImages .activeServiceImage{
+    display: initial;
 }
 
 /* News section */
@@ -413,7 +453,6 @@ footer .footer-links p{
         position: relative;
     }
 
-
     .textRightSection img {
         position: absolute;
         left: 0;
@@ -474,6 +513,10 @@ footer .footer-links p{
     footer {
         padding: 35px 20px 42px;
     }
+
+    .ourServices .section-head{
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width:991px) {
@@ -490,13 +533,30 @@ footer .footer-links p{
         position: fixed;
         right: 0;
         top: 0;
-        width: 300px;
+        width: 325px;
+        max-width: 100%;
         height: 100vh;
         z-index: 12;
         box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3);
         padding-top: 50px;
         transform: translateX(100%);
         transition: all 0.5s;
+    }
+
+
+    nav .dropdown-menu {
+        background-color: #fff;
+        padding: 0.5rem 0;
+    }
+
+    .dropdown-menu .dropdown-item {
+        padding: 0.25rem 1rem;
+    }
+
+    nav .dropdown-menu li a,
+    nav .dropdown-menu li {
+        color: var(--blueColor);
+        font-size: 16px;
     }
 
     .dropdown-menu .dropdown-submenu {
@@ -770,5 +830,27 @@ footer .footer-links p{
         height: 100%;
         object-fit: cover;
     }
+
+    .serviceLeft{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .ourServices .customSlideDots {
+        margin-top: 60px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .ourServices .customSlideDots div {
+        width: 19px;
+        height: 19px;
+        border: 2px solid #fff;
+    }
+
+    .ourServices .serviceImages img{
+        height: 350px;
+    }
+
 
 }
