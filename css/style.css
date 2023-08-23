@@ -490,7 +490,7 @@ footer .footer-links p{
     }
 
     .headerTop{
-        padding: 30px 25px;
+        padding: 17px 25px;
     }
     
     footer{
@@ -534,22 +534,21 @@ footer .footer-links p{
         font-weight: 700;
     }
 
-        .sectionBlue{
-            min-height: unset;
-            font-size: 45px;
-        }
-
-    .sectionBlue .linkButton {
-        font-size: 24px;
-        font-weight: 700;
-        position: static;
-        margin-top: 50px;
-        text-align: end;
+    .sectionBlue{
+        min-height: unset;
+        font-size: 45px;
     }
 
+    .linkButton{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    
+
     .history .mainImg {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         border-radius: 50%;
         position: static;
         top: 50%;
@@ -557,9 +556,9 @@ footer .footer-links p{
         transform: translate(0,0);
     }
 
-    .history .linkButton{
-        font-size: 24px;
-        font-weight: 700;
+    .history .linkButton,.sectionBlue .linkButton{
+        /* font-size: 24px;
+        font-weight: 700; */
         position: static;
         margin-top: 50px;
         text-align: end;
@@ -652,7 +651,7 @@ footer .footer-links p{
 
 @media screen and (max-width:576px) {
     .headerTop {
-        padding: 15px 25px;
+        padding: 16px 25px;
     }
     .testimonials {
         background: #BE8617;
@@ -756,8 +755,8 @@ footer .footer-links p{
     }
 
     .history .mainImg {
-        width: 240px;
-        height: 240px;
+        width: 260px;
+        height: 260px;
     }  
     
     .heroSection .swiper-pagination {
