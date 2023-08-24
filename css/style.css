@@ -301,7 +301,7 @@ footer .footer-links p{
 /* History section */
 .history{
     background: #BE8617;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     width: 100%;
     position: relative;
     padding-top: 97px;
@@ -417,7 +417,7 @@ footer .footer-links p{
 .textRightSection {
     padding: 6.4rem 78px;
     background-color: #5A92DB;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     font-size: 40px;
     font-weight: 700;
     position: relative;
@@ -458,7 +458,7 @@ footer .footer-links p{
     .textRightSection {
         padding: 5rem 78px 3.5rem;
         background-color: #5A92DB;
-        min-height: 100vh;
+        /*min-height: 100vh;*/
         font-size: 27px;
         font-weight: 700;
         position: relative;
