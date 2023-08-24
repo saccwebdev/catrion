@@ -1,205 +1,193 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Homepage</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- Demo styles -->
-    <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-
-
-        .swiper {
-            width: 100%;
-            /* height: 100%; */
-        }
-    </style>
-
-</head>
-
-<body>
-    <div class="page">
-        <header>
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Homepage</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="./css/style.css">
+      <!-- Demo styles -->
+      <style>
+         html,
+         body {
+         position: relative;
+         height: 100%;
+         }
+         .swiper {
+         width: 100%;
+         /* height: 100%; */
+         }
+      </style>
+   </head>
+   <body>
+      <div class="page">
+         <header>
             <div class="headerTop bg-white d-flex justify-content-between align-items-center">
-                <img src="./images/logo.png" alt="" class="logo">
-                <div class="d-flex align-items-center gap-3 gap-sm-4">
-                    <select name="" id="" class="languageDropdown">
-                        <option value="">
-                            EN
-                        </option>
-                    </select>
-                    <div class="position-relative inputBox d-none d-lg-block">
-                        <img src="./images/searchIcon.svg" alt="" class="position-absolute">
-                        <input type="text" placeholder="SEARCH">
-                    </div>
-                    <div class="mobileMenuBar d-lg-none"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                        </svg></div>
-                </div>
+               <img src="./images/logo.png" alt="" class="logo">
+               <div class="d-flex align-items-center gap-3 gap-sm-4">
+                  <select name="" id="" class="languageDropdown">
+                     <option value="">
+                        EN
+                     </option>
+                  </select>
+                  <div class="position-relative inputBox d-none d-lg-block">
+                     <img src="./images/searchIcon.svg" alt="" class="position-absolute">
+                     <input type="text" placeholder="SEARCH">
+                  </div>
+                  <div class="mobileMenuBar d-lg-none">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                     </svg>
+                  </div>
+               </div>
             </div>
-
-
             <nav class="text-white">
-                <div class="closeNavBar d-lg-none"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                        fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                        <path
-                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                    </svg></div>
-                <ul class="d-flex justify-content-between list-unstyled mb-0">
-                    <li class="nav-item dropdown">
-                        <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Explore SACC
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Our Legacy & Philosophy
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">The Team</a></li>
-                            <li><a class="dropdown-item" href="#">Why SACC
-                                </a></li>
-
-                            <li><a class="dropdown-item" href="#">Awards / Certifications
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">CSR & Sustainability
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">Our Locations</a></li>
-                            <li><a class="dropdown-item" href="#">Vision 2030
-                                </a></li>
-
-                            <li><a class="dropdown-item" href="#">Partnerships
-                                </a></li>
-                        </ul>
-                    </li>
-
-
-                    <li class="nav-item dropdown">
-                        <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Our Expertise
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">In Flight</a></li>
-                            <li><a class="dropdown-item" href="#">Retail</a></li>
-                            <li class="dropdown ">
-                                <a class="dropdown-item" href="#">
-                                    Integrated Facilities Management &raquo;
-                                </a>
-                                <ul class="dropdown-menu dropdown-submenu ">
-                                    <li>
-                                        <a class="dropdown-item" href="#">Operation Sectors</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">Giga Projects</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <li><a class="dropdown-item" href="#">Culinary Experiences
-                                </a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Partnerships</a></li>
-                    <li><a href="">Procurement</a></li>
-
-                    <li><a href="">Careers</a></li>
-                    <li class="nav-item dropdown">
-                        <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Investors Relations
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">The Round Table</a></li>
-                            <li><a class="dropdown-item" href="#">Annual Reports</a></li>
-                            <li><a class="dropdown-item" href="#">Announcements</a></li>
-                            <li><a class="dropdown-item" href="#">Investment Presentation
-
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">Corporate Governance
-                                </a></li>
-                            <li><a class="dropdown-item" href="#">Dividends</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">Culinary Academy</a></li>
-
-                </ul>
-                <div class="mt-4 d-lg-none position-relative inputBox">
-                    <img src="./images/searchIcon.svg" alt="" class="position-absolute">
-                    <input type="text" placeholder="SEARCH">
-                </div>
+               <div class="closeNavBar d-lg-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                     fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                     <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+               </div>
+               <ul class="d-flex justify-content-between list-unstyled mb-0">
+                  <li class="nav-item dropdown">
+                     <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                     Explore SACC
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Our Legacy & Philosophy
+                           </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">The Team</a></li>
+                        <li><a class="dropdown-item" href="#">Why SACC
+                           </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Awards / Certifications
+                           </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">CSR & Sustainability
+                           </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Our Locations</a></li>
+                        <li><a class="dropdown-item" href="#">Vision 2030
+                           </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Partnerships
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                     Our Expertise
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">In Flight</a></li>
+                        <li><a class="dropdown-item" href="#">Retail</a></li>
+                        <li class="dropdown ">
+                           <a class="dropdown-item" href="#">
+                           Integrated Facilities Management &raquo;
+                           </a>
+                           <ul class="dropdown-menu dropdown-submenu ">
+                              <li>
+                                 <a class="dropdown-item" href="#">Operation Sectors</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">Giga Projects</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Culinary Experiences
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li><a href="">Partnerships</a></li>
+                  <li><a href="">Procurement</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li class="nav-item dropdown">
+                     <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                     Investors Relations
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">The Round Table</a></li>
+                        <li><a class="dropdown-item" href="#">Annual Reports</a></li>
+                        <li><a class="dropdown-item" href="#">Announcements</a></li>
+                        <li><a class="dropdown-item" href="#">Investment Presentation
+                           </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Corporate Governance
+                           </a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Dividends</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="">Events</a></li>
+                  <li><a href="">Culinary Academy</a></li>
+               </ul>
+               <div class="mt-4 d-lg-none position-relative inputBox">
+                  <img src="./images/searchIcon.svg" alt="" class="position-absolute">
+                  <input type="text" placeholder="SEARCH">
+               </div>
             </nav>
-
-        </header>
-
-        <div class="swiper mySwiper heroSection" style="height: fit-content;">
+         </header>
+         <div class="swiper mySwiper heroSection" style="height: fit-content;">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
-                <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
-                <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
+               <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
+               <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
+               <div class="swiper-slide"><img src="./images/hero1.png" class="d-block w-100" alt="..."></div>
             </div>
             <div class="swiper-pagination"></div>
-        </div>
-
-
-
-        <div class="textRightSection text-white">
+         </div>
+         <div class="textRightSection text-white">
             <div class="main-head">Committed to Care</div>
             <div class="second-head">Committed to You</div>
             <div class="row">
-                <div class="col-6 d-none d-lg-block"><img src="./images/threeCornerCircle.png" alt=""></div>
-                <div class="col-lg-6">
-                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt labore
-                        et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                </div>
+               <div class="col-6 d-none d-lg-block"><img src="./images/threeCornerCircle.png" alt=""></div>
+               <div class="col-lg-6">
+                  <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt labore
+                     et dolore magna aliqua.
+                     Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                  </p>
+               </div>
             </div>
-        </div>
-
-        <div class="ourServices">
+         </div>
+         <div class="ourServices">
             <div class="h-100 text-white row mx-0">
-                <div class="col-md-6 serviceLeft section-padding-x">
-                    <div class="sectionHeadSmall">Our Services</div>
-                    <h1 class="section-head serviceTabs d-flex flex-column mt-2"><span
-                            class="activeServiceTab">In-Flight</span>
-                        <span>Retail</span>
-                        <span>Facilities Management</span>
-                        <span>Culinary Experiences</span>
-                    </h1>
-                    <div class="customSlideDots">
-                        <div class="activeDot"></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div class="col-md-6 serviceImages px-0">
-                    <img src="./images/CateringService.png" alt="" class="mainImg img-fluid activeServiceImage">
-                    <img src="./images/sustainable.png" alt="" class="mainImg img-fluid">
-                    <img src="./images/gigaProject.png" alt="" class="mainImg img-fluid ">
-                    <img src="./images/operationSector.png" alt="" class="mainImg img-fluid">
-                </div>
+               <div class="col-md-6 serviceLeft section-padding-x">
+                  <div class="sectionHeadSmall">Our Services</div>
+                  <h1 class="section-head serviceTabs d-flex flex-column mt-2"><span
+                     class="activeServiceTab">In-Flight</span>
+                     <span>Retail</span>
+                     <span>Facilities Management</span>
+                     <span>Culinary Experiences</span>
+                  </h1>
+                  <div class="customSlideDots">
+                     <div class="activeDot"></div>
+                     <div></div>
+                     <div></div>
+                     <div></div>
+                  </div>
+               </div>
+               <div class="col-md-6 serviceImages px-0">
+                  <img src="./images/CateringService.png" alt="" class="mainImg img-fluid activeServiceImage">
+                  <img src="./images/sustainable.png" alt="" class="mainImg img-fluid">
+                  <img src="./images/gigaProject.png" alt="" class="mainImg img-fluid ">
+                  <img src="./images/operationSector.png" alt="" class="mainImg img-fluid">
+               </div>
             </div>
-        </div>
-
-
-        <!-- <div class="ourServices swiper mySwiper ">
+         </div>
+         <!-- <div class="ourServices swiper mySwiper ">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="h-100 text-white row mx-0">
@@ -247,142 +235,106 @@
                         </div>
                     </div>
                 </div>
-
+            
             </div>
             <div class="swiper-pagination"></div>
-        </div> -->
-
-
-        <div class="section-padding-x history text-white">
+            </div> -->
+         <div class="section-padding-x history text-white">
             <div class="sectionHeadSmall">Our History</div>
             <h1 class="section-head">40 Years</h1>
             <div class="text-center">
-                <img src="./images/history.png" alt="" class="mainImg img-fluid">
+               <img src="./images/history.png" alt="" class="mainImg img-fluid">
+               <div class="centered">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="./images/Layer_1.png" class="img-fluid"></a>
+               </div>
             </div>
-
             <div class="linkButton">
-                <a href="">Discover More</a>
-                <img src="./images/linkArrowWhite.svg" alt="">
+               <a href="">Discover More</a>
+               <img src="./images/linkArrowWhite.svg" alt="">
             </div>
-        </div>
-
-        <div class="section sustainable d-flex justify-content-between align-items-center">
+         </div>
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="modal-header">
+                     <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <!-- <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" width="420" height="345"></iframe>
+                        </div> -->
+                     <div class="youtube-embed">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/glTuJ2kniGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="section sustainable d-flex justify-content-between align-items-center">
             <img src="./images/sustainable.png" alt="" class="mainImg">
             <div class="row mx-0 d-flex justify-content-between w-100">
-                <div class="col-lg-6 position-relative pt-5">
-                    <h1 class="section-head">Sustainable food with care</h1>
-                    <div class="linkButton">
-                        <a href="">Our Commitment</a>
-                        <img src="./images/linkArrowWhite.svg" alt="">
-                    </div>
-                </div>
-                <div class="col-auto d-none d-lg-block">
-                    <img src="./images/loadingCircle.svg" alt="">
-                </div>
-
+               <div class="col-lg-6 position-relative pt-5">
+                  <h1 class="section-head">Sustainable food with care</h1>
+                  <div class="linkButton">
+                     <a href="">Our Commitment</a>
+                     <img src="./images/linkArrowWhite.svg" alt="">
+                  </div>
+               </div>
+               <div class="col-auto d-none d-lg-block">
+                  <img src="./images/loadingCircle.svg" alt="">
+               </div>
             </div>
-        </div>
-
-        <div class="section awardPartners section-padding-x text-white">
+         </div>
+         <div class="section awardPartners section-padding-x text-white">
             <div>
-                <div class="row mx-0 justify-content-between">
-                    <h1 class=" col-lg-5 section-head">Our Awards</h1>
-                    <div class="col-lg-7 awards row mx-0 d-flex gap-3 gap-sm-0 text-center pt-4 pt-lg-5">
-                        <div class="col-sm-6 col-lg-4 ">
-                            <img src="./images/award2023.png" alt="">
-                            <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 ">
-                            <img src="./images/award2014.png" alt="">
-                            <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
-                        </div>
-                        <div class="col-sm-6 col-lg-4  mt-sm-3 mt-lg-0">
-                            <img src="./images/award2013.png" alt="">
-                            <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mx-0 justify-content-between mt-5 pt-lg-5">
-                    <h1 class="col-lg-5 section-head">Our Partners</h1>
-                    <div class="col-lg-7 d-flex row mx-0 pt-3 pt-lg-5 text-center">
-                        <div class="col-sm-6 col-lg-4">
-                            <img src="./images/partner1.png" alt="">
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <img src="./images/partner2.png" alt="">
-                        </div>
-                        <div class="col-sm-6 col-lg-4 mt-sm-3 mt-lg-0">
-                            <img src="./images/partner3.png" alt="">
-                        </div>
-                    </div>
-                </div>
+               <div class="row mx-0 justify-content-between">
+                  <h1 class=" col-lg-5 section-head">Our Awards</h1>
+                  <div class="col-lg-7 awards row mx-0 d-flex gap-3 gap-sm-0 text-center pt-4 pt-lg-5">
+                     <div class="col-sm-6 col-lg-4 ">
+                        <img src="./images/award2023.png" alt="">
+                        <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
+                     </div>
+                     <div class="col-sm-6 col-lg-4 ">
+                        <img src="./images/award2014.png" alt="">
+                        <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
+                     </div>
+                     <div class="col-sm-6 col-lg-4  mt-sm-3 mt-lg-0">
+                        <img src="./images/award2013.png" alt="">
+                        <p class="mt-4 pt-2 ">Award of Excellence in Catering Quality (QSAI)</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mx-0 justify-content-between mt-5 pt-lg-5">
+                  <h1 class="col-lg-5 section-head">Our Partners</h1>
+                  <div class="col-lg-7 d-flex row mx-0 pt-3 pt-lg-5 text-center">
+                     <div class="col-sm-6 col-lg-4">
+                        <img src="./images/partner1.png" alt="">
+                     </div>
+                     <div class="col-sm-6 col-lg-4">
+                        <img src="./images/partner2.png" alt="">
+                     </div>
+                     <div class="col-sm-6 col-lg-4 mt-sm-3 mt-lg-0">
+                        <img src="./images/partner3.png" alt="">
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
+         </div>
 
-        <div class="swiper mySwiperVertical d-none  newsSection h-100">
+         <!-- Blog slider mobile : Hidden on laptop devices --->
+         <div class="swiper mySwiperVertical d-lg-none newsSection h-100">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="  text-white row mx-0">
-                        <div class="col-6 px-0 newsLeft ">
-                            <img src="./images/latestNews.png" alt="" class="mainImg">
+                    <div class="text-white row mx-0 newsLeft ">
+                        <div class="col-md-6 px-0">
+                            <img src="./images/latestNews.png" alt="" class="mainImg-mobile">
                         </div>
-                        <div class="col-6 NewsRight section-padding-x">
-                            <h1 class="section-head ">Latest News</h1>
-                            <div>
-                                <div class="titleText">Place Title Here</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut
-                                    labore et dolore magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
-                                    reprehenderit in
-                                    voluptate velit esse cillum
-                                    dolore eu fugiat nulla pariatur.</p>
-                                <div class="linkButton mt-5">
-                                    <a href="">Read more</a>
-                                    <img src="./images/linkArrowWhite.svg" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="  text-white row mx-0 newsLeft ">
-                        <div class="col-6 px-0">
-                            <img src="./images/latestNews.png" alt="" class="mainImg ">
-                        </div>
-                        <div class="col-6 NewsRight section-padding-x">
-                            <h1 class="section-head ">Latest News</h1>
-                            <div>
-                                <div class="titleText">Place Title Here</div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut
-                                    labore et dolore magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
-                                    reprehenderit in
-                                    voluptate velit esse cillum
-                                    dolore eu fugiat nulla pariatur.</p>
-                                <div class="linkButton mt-5">
-                                    <a href="">Read more</a>
-                                    <img src="./images/linkArrowWhite.svg" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="  text-white row mx-0 newsLeft ">
-                        <div class="col-6 px-0">
-                            <img src="./images/latestNews.png" alt="" class="mainImg">
-                        </div>
-                        <div class="col-6 d-flex flex-column justify-content-between NewsRight section-padding-x">
+                        <div class="col-md-6 d-flex flex-column justify-content-between NewsRight section-padding-x">
                             <h1 class="section-head ">Latest News</h1>
                             <div class="col-lg-8">
-                                <div class="titleText">Place Title Here</div>
+                                <div class="titleTextmobile">Place Title Here</div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut
                                     labore et dolore magna
@@ -395,130 +347,270 @@
                                     <img src="./images/linkArrowWhite.svg" alt="">
                                 </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
+                <div class="swiper-slide">
+                    <div class="text-white row mx-0 newsLeft ">
+                        <div class="col-md-6 px-0">
+                            <img src="./images/latestNews.png" alt="" class="mainImg-mobile">
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between NewsRight section-padding-x">
+                            <h1 class="section-head ">Latest News</h1>
+                            <div class="col-lg-8">
+                                <div class="titleTextmobile">Place Title Here</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
+                                    reprehenderit in
+                                    voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur.</p>
+                                <div class="linkButton mt-5">
+                                    <a href="">Read more</a>
+                                    <img src="./images/linkArrowWhite.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-white row mx-0 newsLeft ">
+                        <div class="col-md-6 px-0">
+                            <img src="./images/latestNews.png" alt="" class="mainImg-mobile">
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between NewsRight section-padding-x">
+                            <h1 class="section-head ">Latest News</h1>
+                            <div class="col-lg-8">
+                                <div class="titleTextmobile">Place Title Here</div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
+                                    reprehenderit in
+                                    voluptate velit esse cillum
+                                    dolore eu fugiat nulla pariatur.</p>
+                                <div class="linkButton mt-5">
+                                    <a href="">Read more</a>
+                                    <img src="./images/linkArrowWhite.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
-        </div>
+            </div>
 
 
-
-
-
-        <div class="section sectionBlue section-padding-x">
+         <!-- vertical slider : Hidden on mobile devices --->
+         <div class="newsSection h-100 d-none d-lg-block">
+            <div class="carousel-container justify-content-center">
+               <div id="vertical-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"
+                  data-bs-wrap="true">
+                  <!-- Carousel slide indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-bs-target="#vertical-carousel" data-bs-slide-to="0" class="active"></li>
+                     <li data-bs-target="#vertical-carousel" data-bs-slide-to="1"></li>
+                     <li data-bs-target="#vertical-carousel" data-bs-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <!-- Carousel item represents each slide -->
+                     <div class="carousel-item active">
+                        <div class="swiper-slide">
+                           <div class="  text-white row mx-0 newsLeft ">
+                              <div class="col-6 px-0">
+                                 <img src="./images/latestNews.png" alt="" class="mainImg">
+                              </div>
+                              <div class="col-6 d-flex flex-column justify-content-between NewsRight section-padding-x">
+                                 <h1 class="section-head ">Latest News</h1>
+                                 <div class="col-lg-8">
+                                    <div class="titleText">Place Title Here</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                       incididunt ut
+                                       labore et dolore magna
+                                       aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
+                                       reprehenderit in
+                                       voluptate velit esse cillum
+                                       dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <div class="linkButton mt-5">
+                                       <a href="">Read more</a>
+                                       <img src="./images/linkArrowWhite.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="swiper-slide">
+                           <div class="text-white row mx-0 newsLeft ">
+                              <div class="col-6 px-0">
+                                 <img src="./images/latestNews.png" alt="" class="mainImg">
+                              </div>
+                              <div class="col-6 d-flex flex-column justify-content-between NewsRight section-padding-x">
+                                 <h1 class="section-head ">Latest News</h1>
+                                 <div class="col-lg-8">
+                                    <div class="titleText">Place Title Here</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                       incididunt ut
+                                       labore et dolore magna
+                                       aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
+                                       reprehenderit in
+                                       voluptate velit esse cillum
+                                       dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <div class="linkButton mt-5">
+                                       <a href="">Read more</a>
+                                       <img src="./images/linkArrowWhite.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="swiper-slide">
+                           <div class="text-white row mx-0 newsLeft ">
+                              <div class="col-6 px-0">
+                                 <img src="./images/latestNews.png" alt="" class="mainImg">
+                              </div>
+                              <div class="col-6 d-flex flex-column justify-content-between NewsRight section-padding-x">
+                                 <h1 class="section-head ">Latest News</h1>
+                                 <div class="col-lg-8">
+                                    <div class="titleText">Place Title Here</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                       incididunt ut
+                                       labore et dolore magna
+                                       aliqua. Ut enim ad minim veniam, quis nostrud. Duis aute irure dolor in
+                                       reprehenderit in
+                                       voluptate velit esse cillum
+                                       dolore eu fugiat nulla pariatur.
+                                    </p>
+                                    <div class="linkButton mt-5">
+                                       <a href="">Read more</a>
+                                       <img src="./images/linkArrowWhite.svg" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Carousel buttons -->
+               <!-- <button class="unclickable carousel-control-prev" type="button" data-bs-target="#vertical-carousel"
+                  data-bs-slide="prev">
+                  <span class="clickable carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="unclickable carousel-control-next" type="button" data-bs-target="#vertical-carousel"
+                  data-bs-slide="next">
+                  <span class="clickable carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                  </button> -->
+            </div>
+         </div>
+         <div class="section sectionBlue section-padding-x">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna
             aliqua.
             <div class="linkButton">
-                <a href="">Discover More</a>
-                <img src="./images/linkArrow.svg" alt="">
+               <a href="">Discover More</a>
+               <img src="./images/linkArrow.svg" alt="">
             </div>
-
-        </div>
-
-        <div class="section section-padding-x testimonials text-white">
+         </div>
+         <div class="section section-padding-x testimonials text-white">
             <h1 class="section-head">Testimonials</h1>
-
             <div class="row mx-0 gap-3 gap-md-5 gap-lg-0 justify-content-between">
-                <div class="testimonial-item d-flex gap-4 align-items-center">
-                    <div class="profile"><img src="./images/testimonial1.png" alt=""></div>
-                    <div>
-                        <h2 class="testimonial-name mb-0">Name Surname </h2>
-
-                        <p class="testimonial-client">Client</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                </div>
-                <div class="testimonial-item d-flex gap-4 align-items-center">
-                    <div class="profile"><img src="./images/testimonial2.png" alt=""></div>
-                    <div>
-                        <h2 class="testimonial-name mb-0">Name Surname </h2>
-
-                        <p class="testimonial-client">Client</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    </div>
-
-                </div>
+               <div class="testimonial-item d-flex gap-4 align-items-center">
+                  <div class="profile"><img src="./images/testimonial1.png" alt=""></div>
+                  <div>
+                     <h2 class="testimonial-name mb-0">Name Surname </h2>
+                     <p class="testimonial-client">Client</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                     </p>
+                  </div>
+               </div>
+               <div class="testimonial-item d-flex gap-4 align-items-center">
+                  <div class="profile"><img src="./images/testimonial2.png" alt=""></div>
+                  <div>
+                     <h2 class="testimonial-name mb-0">Name Surname </h2>
+                     <p class="testimonial-client">Client</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                     </p>
+                  </div>
+               </div>
             </div>
-
-        </div>
-
-        <footer class=" bg-white row mx-0 d-flex gap-4 flex-wrap justify-content-between text-center text-md-start">
+         </div>
+         <footer class=" bg-white row mx-0 d-flex gap-4 flex-wrap justify-content-between text-center text-md-start">
             <div
-                class="col-12 col-lg-4 d-flex flex-column gap-3 align-items-center align-items-md-start justify-content-between">
-                <img src="./images/logo.png" alt="" class="logo">
-                <p class="primaryColor">2023 CATRION All Rights Reserved.</p>
+               class="col-12 col-lg-4 d-flex flex-column gap-3 align-items-center align-items-md-start justify-content-between">
+               <img src="./images/logo.png" alt="" class="logo">
+               <p class="primaryColor">2023 CATRION All Rights Reserved.</p>
             </div>
             <div
-                class="col-12  col-lg-7 d-flex flex-wrap gap-3 gap-md-4 justify-content-center justify-content-md-between footer-links">
-                <div>
-                    <p>Contact Us</p>
-                    <ul class="list-unstyled">
-                        <li><a href="">Find Our Location</a></li>
-                        <li><a href="">Address Details</a></li>
-                        <li><a href="">Contact Details</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Legal Links</p>
-                    <ul class="list-unstyled">
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Disclaimer</a></li>
-                        <li><a href="">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Follow Us</p>
-                    <div class="social-icons d-flex align-items-center gap-2">
-                        <a href=""><img src="./images/facebook.png" alt=""></a>
-                        <a href=""><img src="./images/twitter.png" alt=""></a>
-                        <a href=""><img src="./images/instagram.png" alt=""></a>
-                        <a href=""><img src="./images/linkedin.png" alt=""></a>
-                        <a href=""><img src="./images/youtube.png" alt=""></a>
-                    </div>
-                </div>
+               class="col-12  col-lg-7 d-flex flex-wrap gap-3 gap-md-4 justify-content-center justify-content-md-between footer-links">
+               <div>
+                  <p>Contact Us</p>
+                  <ul class="list-unstyled">
+                     <li><a href="">Find Our Location</a></li>
+                     <li><a href="">Address Details</a></li>
+                     <li><a href="">Contact Details</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <p>Legal Links</p>
+                  <ul class="list-unstyled">
+                     <li><a href="">Privacy Policy</a></li>
+                     <li><a href="">Disclaimer</a></li>
+                     <li><a href="">Terms & Conditions</a></li>
+                  </ul>
+               </div>
+               <div>
+                  <p>Follow Us</p>
+                  <div class="social-icons d-flex align-items-center gap-2">
+                     <a href=""><img src="./images/facebook.png" alt=""></a>
+                     <a href=""><img src="./images/twitter.png" alt=""></a>
+                     <a href=""><img src="./images/instagram.png" alt=""></a>
+                     <a href=""><img src="./images/linkedin.png" alt=""></a>
+                     <a href=""><img src="./images/youtube.png" alt=""></a>
+                  </div>
+               </div>
             </div>
-
-        </footer>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        var swiperVertical = new Swiper(".mySwiperVertical", {
-            direction: "vertical",
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-    </script>
-    <script src="script.js"></script>
-    <script src="ourServices.js"></script>
-
-</body>
-
+         </footer>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+         crossorigin="anonymous"></script>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+         var swiper = new Swiper(".mySwiper", {
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+         });
+         
+         var swiperVertical = new Swiper(".mySwiperVertical", {
+             /*direction: "vertical",*/
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+         });
+         
+      </script>
+      <script src="script.js"></script>
+      <script src="ourServices.js"></script>
+   </body>
 </html>

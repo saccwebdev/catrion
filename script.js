@@ -6,3 +6,4 @@ document.querySelector(".mobileMenuBar").addEventListener("click", () => {
 document.querySelector(".closeNavBar").addEventListener("click", () => {
   document.querySelector("nav").classList.remove("showNav");
 });
+
