@@ -303,11 +303,15 @@ footer .footer-links p{
 /* History section */
 .history{
     background: #BE8617;
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     width: 100%;
     position: relative;
     padding-top: 97px;
     padding-bottom: 97px;
+}
+
+@media(min-width: 768px) and (max-width:1280px){
+    min-height: auto!important;
 }
 
 .history .mainImg{
