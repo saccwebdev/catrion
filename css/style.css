@@ -38,6 +38,8 @@
 
 img.mainImg-mobile {
     max-width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
 }
 
 .titleTextmobile{
