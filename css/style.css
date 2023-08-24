@@ -311,7 +311,9 @@ footer .footer-links p{
 }
 
 @media(min-width: 768px) and (max-width:1280px){
-    min-height: auto!important;
+    .history{
+        min-height: auto!important;
+    }
 }
 
 .history .mainImg{
