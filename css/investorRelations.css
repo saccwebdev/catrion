@@ -60,9 +60,47 @@ body{
 }
 
 
+.inventorsCenterSection .column-item {
+    cursor: pointer;
+    position: relative;
+}
+
+.inventorsCenterSection .column-item.darkOverlay:hover img {
+    opacity: 0;
+}
+
+.readMoreBtn {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    border: none;
+    color: #5A92DB;
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    right: 30px;
+    display: none;
+}
+
+.column-item.darkOverlay .readMoreBtn {
+    right: 40%;
+}
+
+.inventorsCenterSection .column-item:hover .readMoreBtn {
+    display: initial;
+}
+
+.readMoreBtn:active {
+    background: #A6D178;
+    color: #fff;
+}
+
+
 @media screen and (max-width:1200px) {
     .inventorsCenterSection .column-item p {
-        font-size: 40px;
+        font-size: 35px;
         font-weight: 700;
         bottom: 20px;
         margin-bottom: 0%;
@@ -90,7 +128,14 @@ body{
     .columnsText p {
         width: 42%;
     }
-}
+
+    .readMoreBtn {
+        width: 120px;
+        border-radius: 50%;
+        height: 120px;
+        font-size: 20px;
+    }
+}    
 
 @media screen and (max-width:576px) {
     body{
