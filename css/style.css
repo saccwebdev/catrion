@@ -1065,3 +1065,50 @@ footer .footer-links p{
  width: 100%;
  height: 100%;
  }
+
+ .sectionWhite {
+    min-height: 100vh;
+    padding: 87px 78px;
+    position: relative;
+}
+
+ /* tabs */
+ .nav-pills li{ position: relative;}
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #5A92DB;
+    background-color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+.nav-pills .nav-link { color: #ACC8ED; font-size: 30px;
+    font-weight: 700; }
+
+    .nav-pills .nav-link.active::after {
+        content: "";
+    }
+    .nav-pills .nav-link.active::after {
+        content: ".";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        font: var(--fa-font-solid);
+        color: #5A92DB;
+        font-size: 50px;
+        line-height: 41px;
+    }
+
+    .no-horizontal-padding  { padding-right: 0; padding-left: 0;}
+    .main-head { font-size: 76px; line-height: 1.2em; font-weight:700; color: #A4CF78;}
+    .text-black { color: #000; }
+    .text-green { color: #A4CF78; }
+    .f-30 { font-size: 30px; line-height: 1.2em; font-weight: 700;}
+
+    .sectionBlues {
+        background: #003F53;
+        color: #A6D178;
+        font-size: 68px;
+        font-weight: 700;
+        padding: 7px 78px;
+        position: relative;
+    }
+    .objectcover { object-fit: cover; height: 550px; width: 100%;}
